@@ -82,7 +82,7 @@ function animate() {
   }
   else if (keys.s.pressed && lastKey === 's') 
   {
-    background.y -= 1.5
+    background.y -= 3
     player.GoToState("RUN-DOWN");
   }
   else if (keys.d.pressed && lastKey === 'd') 
@@ -140,30 +140,22 @@ window.addEventListener('keydown', (e) => {
     case 'w':
       keys.w.pressed = true
       lastKey = 'w'
-      console.log("up");
       break
     case 'a':
       keys.a.pressed = true
       lastKey = 'a'
-      console.log("left");
       break
-
     case 's':
       keys.s.pressed = true
       lastKey = 's'
-      console.log("down");
       break
-
     case 'd':
       keys.d.pressed = true
       lastKey = 'd'
-      console.log("right");
       break
-
     case ' ':
       keys.space.pressed = true
       lastKey = ' '
-      console.log("SPACE");
       break
   }
 })
